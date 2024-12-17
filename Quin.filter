@@ -1,0 +1,475 @@
+
+
+
+Show
+Quality > 5
+Rarity Normal
+SetTextColor 255 255 255
+SetBorderColor 255 255 255
+SetBackgroundColor 155 138 138
+SetFontSize 35
+
+
+Show
+Quality > 5
+Rarity Magic
+SetTextColor 255 255 255
+SetBorderColor 255 255 255
+SetBackgroundColor 155 138 138
+SetFontSize 35
+
+
+# Highlight High-Value Currency with Correct Colors and "Tink" Sound
+
+
+
+
+#T1 currency
+Show 
+Class "Currency"
+BaseType "Divine Orb" "Mirror of Kalandra" "Mirror Shard" "Perfect Jeweller's Orb" "Greater Jeweller's Orb" "Orb of Annulment"
+	SetFontSize 45
+	SetTextColor 255 0 0 255
+	SetBorderColor 255 0 0 255
+	SetBackgroundColor 255 255 255 255
+	PlayAlertSound 6 300
+	PlayEffect Red
+	MinimapIcon 0 Red Star
+ 
+# T2 Currency
+Show 
+Class "Currency"
+BaseType  "Chaos Orb" "Regal Orb" "Exalted Orb" "Orb of Alchemy" "Orb of Chance" "Gemcutter's Prism" "vaal orb"
+	SetFontSize 45
+	SetTextColor 255 255 255 255
+	SetBorderColor 255 255 255 255
+	SetBackgroundColor 240 90 35 255
+	PlayAlertSound 4 200
+	PlayEffect Red
+	MinimapIcon 0 Red Circle
+ 
+ 
+ 
+# T3 Currency
+Show 
+Class "Currency"
+BaseType "Blacksmith's Whetstone" "Armourer's Scrap" "Arcanist's Etcher" "Glassblower's Bauble" "Lesser Jeweller's Orb" "Artificer's Orb" "Chance Shard"
+	SetFontSize 45
+	SetTextColor 20 0 40 255
+	SetBorderColor 20 0 40 255
+	SetBackgroundColor 249 150 25 255
+	PlayAlertSound 2 200
+	PlayEffect White
+	MinimapIcon 2 White Circle
+ 
+#T4 Currency
+Show 
+Class "Currency"
+BaseType "Orb of Augmentation" "Orb of Transmutation" "Regal Shard"
+	SetFontSize 38
+	SetTextColor 20 0 40 255
+	SetBorderColor 20 0 40 255
+	SetBackgroundColor 210 178 210 255
+
+
+
+
+Show # SHARDS TIER 1
+	Class == "Stackable Currency"
+	BaseType "Regal Shard" "Chance Shard"
+	SetFontSize 36
+	SetBorderColor 180 158 135 255
+#	SetBorderColor 222 184 135 205
+	
+Show # SHARDS TIER 2
+	Class == "Stackable Currency"
+	BaseType "Transmutation Shard" "Artificer's Shard"
+	SetFontSize 30
+	SetBackgroundColor 20 20 0 200
+
+
+
+
+Show # ESSENCE TIER 1
+	Class == "Stackable Currency"
+	BaseType "Greater Essence of"
+	SetFontSize 36
+	SetTextColor 255 255 255 255
+	SetBorderColor 0 0 0 255
+	SetBackgroundColor 125 160 125 255
+	PlayEffect Green
+	MinimapIcon 1 Green Diamond
+	
+Show # ESSENCES TIER 2
+	Class == "Stackable Currency"
+	BaseType "Essence of"
+	SetFontSize 36
+	SetTextColor 0 0 0 255
+	SetBorderColor 0 0 0 255
+	SetBackgroundColor 125 160 125 255
+	PlayAlertSound 4 100
+	PlayEffect Green Temp
+	MinimapIcon 2 Green Diamond
+
+Show # OMENS and cata
+	Class "Currency"
+	BaseType  "Catalyst" "Omen"
+	SetTextColor 255 255 255
+	SetBorderColor 130 15 255
+	SetBackgroundColor 65 20 80
+	PlayEffect Purple
+	MinimapIcon 2 Purple Circle
+
+
+# DELIRIUM 
+
+# T1 Deli
+Show 
+Class "Currency"
+BaseType "Distilled Suffering" "Distilled Isolation" 
+	SetFontSize 55
+	SetTextColor 180 0 255
+	SetBorderColor 180 0 255
+	SetBackgroundColor 255 255 255
+	PlayAlertSound 6 300
+	PlayEffect Red
+	MinimapIcon 0 Red Hexagon
+
+
+# T2 Deli
+Show
+Class "Currency"
+BaseType "Distilled Fear" 
+	SetFontSize 55
+	SetTextColor 255 255 255
+	SetBorderColor 255 255 255
+	SetBackgroundColor 180 0 255
+	PlayAlertSound 6 150
+	PlayEffect Red
+	MinimapIcon 0 Red Hexagon
+
+
+
+# T3 Deli
+Show
+Class "Currency"
+BaseType "Distilled Envy" "Distilled Despair"
+	SetFontSize 45
+	SetTextColor 0 0 0
+	SetBorderColor 0 0 0
+	SetBackgroundColor 180 0 255
+	PlayAlertSound 4 200
+	PlayEffect Yellow
+	MinimapIcon 1 Yellow Hexagon
+
+
+ 
+# T4 Deli
+Show 
+Class "Currency"
+BaseType  "Distilled Paranoia" "Distilled Envy" 
+	SetFontSize 45
+	SetTextColor 0 0 0
+	SetBorderColor 0 0 0
+	SetBackgroundColor 175 120 230
+	PlayAlertSound 4 100
+	PlayEffect Yellow
+	MinimapIcon 2 Yellow Hexagon
+ 
+ 
+ 
+# T5 Deli
+Show 
+Class "Currency"
+BaseType "Distilled Ire" "Distilled Guilt" "Distilled Greed"
+	SetFontSize 35
+	SetTextColor 0 0 0
+	SetBorderColor 0 0 0
+	SetBackgroundColor 175 120 230
+	PlayAlertSound 2 100
+	PlayEffect White
+	MinimapIcon 2 White Hexagon
+
+
+
+# Fragments
+Show
+BaseType "Simulacrum" " Tablet" "Breachstone" "Barya" "Ultimatum" " Fragment" "Cowardly Fate" "Deadly Fate" "Victorious Fate" "Expedition Logbook"
+SetTextColor 255 207 255
+SetBorderColor 255 207 255
+SetBackgroundColor 65 20 80
+PlayAlertSound 2 300
+PlayEffect White
+MinimapIcon 1 White Square
+SetFontSize 40
+
+Show
+BaseType "Breach splinter" "Simulacrum Splinter" "Artifact" "exotic"
+SetTextColor 255 255 255
+SetBorderColor 130 15 255
+SetBackgroundColor 65 20 80
+PlayAlertSound 2 300
+PlayEffect Purple
+MinimapIcon 1 Grey Kite
+SetFontSize 40
+
+
+Show 
+BaseType "Waystone"
+WaystoneTier >= 10
+SetFontSize 45
+SetTextColor 255 207 255
+SetBorderColor 255 207 255
+SetBackgroundColor 65 20 80
+PlayAlertSound 2 300
+PlayEffect White
+MinimapIcon 1 White Square
+ 
+Hide 
+BaseType "Waystone"
+
+Show # GOLD BIG
+	BaseType == "Gold"
+	StackSize >= 500
+	SetFontSize 36
+#	SetTextColor 240 210 150 255
+#	SetBackgroundColor 0 0 0 205
+	PlayEffect Yellow Temp
+
+#Show # GOLD SMALL
+	BaseType == "Gold"
+	SetBorderColor 0 0 0 255
+	SetBackgroundColor 0 0 0 180
+
+Show # BRONZE KEY
+	BaseType "Bronze Key"
+	SetFontSize 36
+	SetTextColor 0 205 0 255
+	SetBorderColor 205 127 50 255
+	SetBackgroundColor 0 0 0 240
+	MinimapIcon 1 White Square
+	
+Show # SILVER KEY
+	BaseType "Silver Key"
+	SetFontSize 36
+	SetTextColor 0 205 0 255
+	SetBorderColor 192 192 192 255
+	SetBackgroundColor 0 0 0 240
+	MinimapIcon 1 White Square
+	
+Show # GOLD KEY
+	BaseType "Gold Key"
+	SetFontSize 36
+	SetTextColor 0 205 0 255
+	SetBorderColor 255 235 0 255
+	SetBackgroundColor 0 0 0 240
+	MinimapIcon 1 White Square
+
+Show # LEGENDARY ALL
+	Rarity Unique
+	SetFontSize 40
+	SetTextColor 0 0 0 255
+	SetBorderColor 100 50 30 255
+	SetBackgroundColor 175 96 37 255
+	PlayAlertSound 1 300
+	PlayEffect Brown
+	MinimapIcon 1 Brown Star
+
+#	Show # LEGENDARY TIER 0
+#	Rarity Unique	
+#	SetFontSize 45
+#	SetTextColor 255 255 255 255
+#	SetBorderColor 255 255 255 255
+#	SetBackgroundColor 175 96 37 255
+#	PlayAlertSound 1 300
+#	PlayEffect Yellow
+#	MinimapIcon 0 Yellow Star
+
+
+# Highlight Scroll of Wisdom
+Show
+ BaseType "Scroll of Wisdom"
+ SetFontSize 25
+ SetTextColor 0 0 0
+ SetBorderColor 0 0 0
+ SetBackgroundColor 184 134 11  # Dark golden color
+
+# Highlight Rune Items with Light Green Color
+Show
+ BaseType "Rune"
+ SetFontSize 50
+ SetTextColor 0 0 0  # Black text color
+ SetBorderColor 0 0 0  # Black border color
+ SetBackgroundColor 111 255 111  # Light green background
+ PlayAlertSound 2 100  # Halved volume for runes
+
+
+  ### UNCUT GEMS ###
+
+Show # Support Gems
+BaseType == "Uncut Support Gem"
+ItemLevel >= 3 
+SetFontSize 40
+SetTextColor 255 245 0
+SetBorderColor 0 240 190
+SetBackgroundColor 20 20 0
+PlayAlertSound 2 100  # Halved volume for runes
+
+
+Show # Spirit Gems
+BaseType == "Uncut Spirit Gem"
+ItemLevel >= 19
+SetFontSize 40
+SetTextColor 0 0 0  # Black text color
+SetBorderColor 0 0 0  # Black border color
+SetBackgroundColor 111 255 111  # Light green background
+PlayAlertSound 2 100  # Halved volume for runes
+
+
+Show # Skill Gems
+BaseType == "Uncut Skill Gem"
+ItemLevel >= 19
+SetFontSize 40
+SetTextColor 0 0 0  # Black text color
+SetBorderColor 0 0 0  # Black border color
+SetBackgroundColor 111 255 111  # Light green background
+PlayAlertSound 2 100  # Halved volume for runes
+
+
+ ### $$$ UNCUT LVL 20 UNCUT GEM $$$$###
+
+Show # Skill Gems
+BaseType == "Uncut Skill Gem"
+ItemLevel >= 20
+SetFontSize 45
+SetTextColor 255 0 0 255
+SetBorderColor 255 0 0 255
+SetBackgroundColor 255 255 255 255
+PlayAlertSound 6 300
+PlayEffect Red
+MinimapIcon 0 Red Star
+
+
+Show # Skill Gems
+BaseType == "Uncut Spirit Gem"
+ItemLevel >= 20
+SetFontSize 45
+SetTextColor 255 0 0 255
+SetBorderColor 255 0 0 255
+SetBackgroundColor 255 255 255 255
+PlayAlertSound 6 300
+PlayEffect Red
+MinimapIcon 0 Red Star
+
+Hide
+BaseType "Uncut"
+
+
+
+# Special A Tier - League specific socketables and jewels
+Show 
+BaseType "Soul Core" "Timeless"
+SetTextColor 0 240 190
+SetBorderColor 0 240 190
+SetFontSize 40
+MinimapIcon 2 Cyan Triangle
+PlayEffect Cyan
+
+# Special A Tier - Sanctum Relics
+Show 
+Class "Relic"
+SetTextColor 0 240 190
+SetBorderColor 0 240 190
+SetFontSize 40
+MinimapIcon 2 Cyan Triangle
+PlayEffect Cyan
+
+Show # Jewels Rare
+	Rarity Rare
+	Class == "Jewels"
+	SetFontSize 36
+	SetTextColor 220 220 0 255
+	SetBorderColor 240 240 0 255
+	SetBackgroundColor 120 120 0 225
+	MinimapIcon 2 Yellow Diamond
+
+Show # Jewels Magic
+	Rarity Normal Magic
+	Class == "Jewels"
+	SetFontSize 36
+	SetTextColor 0 75 250 255
+	SetBorderColor 0 100 240 255
+	SetBackgroundColor 0 20 40 255
+	MinimapIcon 2 Blue Diamond
+
+#--------------------------
+# Value Rares
+#--------------------------
+
+Show
+Class "Rings" "Amulets" "Belts"
+Rarity Rare
+SetFontSize 40
+SetTextColor 233 206 75
+SetBorderColor 233 206 75
+PlayEffect Yellow
+MinimapIcon 1 Yellow Diamond
+
+#--------------------------
+# Chance bases
+#--------------------------
+
+Show
+BaseType "Azure Amulet" "Emerald Ring" "Heavy Belt" "Grand Regalia" "Sapphire Ring" "Stellar Amulet"
+Rarity <= normal
+SetFontSize 45
+SetTextColor 255 255 255
+SetBorderColor 0 150 0
+SetBackgroundColor 0 0 0
+PlayEffect Green
+PlayAlertSound 11 100
+
+MinimapIcon 0 Green Circle
+
+Show
+Rarity Normal
+Class "Amulet" "Ring"
+	SetFontSize 40
+	SetBorderColor 100 50 100 200
+
+Hide
+Class Flask
+Rarity Normal Magic 
+
+Hide
+Rarity Normal Magic
+Class Body Boots Gloves Helmet Shield Foci Bow Mace Quarterstaff Quivers Crossbows Sceptres Wands Staves Rings Belts Amulets
+
+Show
+BaseType "Expert Elite Greathelm" "Expert Spired Greathelm" "Expert Soldier Greathelm" "Expert Moulded Mitts" "Expert Bolstered Mitts" "Expert Riveted Mitts" "Expert Steel Plate" "Expert Vaal Cuirass" "Expert Steel Plate" "Expert Iron Cuirass" "Expert Stone Greaves" "Expert Trimmed Greaves" "Expert Iron Greaves" "Expert Leaden Greathammer" "Expert Oak Greathammer" "Expert Temple Maul" "Expert Forge Maul" "Giant Maul" "Abyssal Cuirass" "Azure Amulet" "Emerald Ring"
+Rarity <= normal
+SetFontSize 35
+SetTextColor 220 220 220
+SetBorderColor 255 125 0
+SetBackgroundColor 0 0 0
+MinimapIcon 1 Orange Circle
+
+
+
+Show
+BaseType "Expert Elite Greathelm" "Expert Spired Greathelm" "Expert Soldier Greathelm" "Expert Moulded Mitts" "Expert Bolstered Mitts" "Expert Riveted Mitts" "Expert Steel Plate" "Expert Vaal Cuirass" "Expert Steel Plate" "Expert Iron Cuirass" "Expert Stone Greaves" "Expert Trimmed Greaves" "Expert Iron Greaves" "Expert Leaden Greathammer" "Expert Oak Greathammer" "Expert Temple Maul" "Expert Forge Maul" "Giant Maul" "Abyssal Cuirass"
+Rarity <= normal
+SetFontSize 35
+SetTextColor 220 220 220
+SetBorderColor 255 125 0
+SetBackgroundColor 0 0 0
+MinimapIcon 1 Orange Circle
+
+
+Hide
+BaseType "Gargantuan Life Flask" "Ultimate Mana Flask" "Ultimate Life Flask" "Gargantuan Mana Flask" "Advanced Brigand Mace" "Keth Raiment" "Advanced Gothic Quarterstaff" "Advanced Dualstring Bow" "Intricate Gloves" "Ornate Belt" "Expert Frayed Shoes" "Transcendent Mana Flask" "Advanced Hermit Garb" "Advanced Braced Sabatons" "Advanced Bombard Crossbow" "Advanced Warpick" "Advanced Keth Raiment" "Volatile Wand" "Advanced Feathered Tiara" "Advanced Votive Raiment" "Advanced Varnished Crossbow" "Advanced Forlorn Crossbow" "Advanced Silk Slippers" "Advanced Slicing Quarterstaff" "Siphoning Wand" "Expert Rogue Armour" "Advanced Scale Mail" "Advanced Rampart Tower Shield" "Chiming Staff" "Advanced Aged Cuffs" "Chiseled Targe" "Advanced Crystal Focus" "Advanced Barrier Quarterstaff" "Advanced Omen Crest Shield" "Advanced Sectioned Bracers" "Advanced Stone Tower Shield" "Shrine Sceptre" "Omen Sceptre" "Expert Wicker Tiara" "Advanced Shaman Mantle" "Advanced Feathered Targe" "Advanced Anchorite Garb" "Hunting Shoes" "Advanced Embossed Boots" "Advanced Marabout Garb" "Tribal Mask" "Expert Waxed Jacket" "Advanced Pelt Leggings" "Zealot Bow" "Advanced Goldcast Cuffs" "Advanced Lizardscale Boots" "Serrated Quiver" "Advanced Wayfarer Jacket" "Attuned Wand" "Expert Mail Sabatons" "Colossal Mana Flask" "Advanced Tonal Focus" "Advanced Plated Mace" "Advanced Swathed Cap" "Advanced Long Quarterstaff" "Advanced Studded Targe" "Expert Antler Focus" "Advanced Braced Tower Shield" "Expert Gauze Wraps" "Stoic Sceptre" "Expert Padded Leggings" "Expert Guarded Helm" "Advanced Jewelled Gloves" "Transcendent Life Flask" "Advanced Doubled Gauntlets" "Advanced Feathered Sandals" "Advanced Martyr Crown" "Advanced Mail Sabatons" "Advanced Mail Vestments" "Advanced Steeltoe Boots" "Expert Hexer's Robe" "Advanced Spined Bracers" "Bone Wand" "Expert Ringmail Gauntlets" "Ashen Staff" "Advanced Studded Vest" "Advanced Sombre Gloves" "Expert Face Mask" "Advanced Heavy Crown" "Advanced Chain Mail" "Advanced Stitched Glove" "Advanced Scout's Vest" "Advanced Plumed Focus" "Pyrophyte Staff" "Advanced Rhoahide Coat" "Expert Pathfinder Coat" "Advanced Shielded Helm" "Expert Felt Cap" "Advanced Sectarian Crest Shield" "Advanced Pilgrim Vestments" "Giant Life Flask" "Fire Quiver" "Advanced Crescent Quarterstaff" "Advanced Wicker Tiara" "Gelid Staff" "Advanced Linen Wraps" "Advanced Twig Circlet" "Expert Gothic Quarterstaff" "Expert Horned Crown" "Advanced Woven Focus" "Expert PElt Mantle" "Advanced Cloaked Mail" "Expert Firm Bracers" "Advanced Cultist Bow" "Advanced Serpentscale Coat" "Advanced Tense Crossbow" "Advanced Scalper's Jacket" "Volant Quiver" "Advanced Spiral Wraps" "Advanced Chain Tiara" "Advanced Ringmail Gauntlets" "Advanced Pelage Targe" "Advanced Cowled Helm" "Toxic Quiver" "Advanced Hexer's Robe" "Broadhead Quiver" "Expert Sturdy Crossbow" "Advanced Threaded Shoes" "Serpentscale Coat" "Advanced Rope Cuffs" "Expert Pelage Targe" "Advanced Iron Crown" "Advanced Secured Leggings" "Advanced Rogue Armour" "Advanced Cultist Crown" "Advanced Veiled Mask" "Gauze Wraps" "Advanced Ironclad Vestments" "Advanced Firm Bracers" "Advanced Dyad Crossbow" "Effigial tower Shield" "Withered Wand" "Steeltoe boots" "Sacral Quiver" "Expert Shortbow" "Advanced Warden Bow" "Voltaic Staff" "Sacrificial Mantle" "Expert Frayed Shoes" "Blunt Quiver" "Advanced Jingling Crest Shield" "Expert Braced Tower Shield" "Expert Wrapped Sandals" "Advanced Voodoo Focus" "Expert Wicker Tiara" "Advanced Shortbow" "Advanced Pathfinder Coat" "Expert Laced Boots" "Advanced Sturdy Crossbow" "Advanced Stacked Sabatons" "Advanced Brimmed Helm" "Veiled Mask" "Advanced Crackling Quarterstaff" "Advanced Lace Hood" "Visceral Quiver" "Advanced Hardwood Targe" "Rattling Sceptre" "Advanced Lattice Sandals" "Stacked Sabatons" "Advanced Marabout Garb" "Shrine Sceptre" "Expert Hexer's Robe" "Advanced Voodoo Focus" "Advanced Heraldric Tower Shield" "Advanced Tribal Mask" "Advanced Hooded Mask" "Advanced Frayed Shoes" "Expert Sombre Gloves" "Advanced Hewn Mask" "Advanced Altar Robe" "Advanced Layered Gauntlets" "Advanced Goldcast Cuffs" "Advanced Padded Leggings" "Hardwood Targe" "Advanced Silk Robe" "Long Belt" "Advanced Explorer Armour" "Primed Quiver" "Advanced Beaded Circlet" "Advanced Face Mask" "Advanced Guarded Helm" "Advanced Felt Cap" "Shaman Mantle" "Linen Belt" "Viper Cap" "Scout's Vest" "Advanced Bound Bracers" "Expert Sigil Crest Shield" "Advanced Shabby Hood" "Spined Bracers" "Grand Mana Flask" "Advanced Antler Focus" "Cowled Helm" "Expert Rope Cuffs" "Advanced Pelt Mantle" "Construct Crossbow" "Jingling Crest Shield" "Braced Sabatons" "Wicker Tiara" "Plumed Focus" "Expert Layered Gauntlets" "Expert Studded Vest" "Advanced Vagabond Armour" "Barrier Quarterstaff" "Two-Point Quiver" "Advanced Waxed Jacket" "Expert Linen Wraps" "Expert Rampart Tower Shield" "Advanced Hunter hood" "Advanced Feathered Robe" "construct hammer" "Blazon Crest Shield" "gold Circlet" "Quarterstaff" "Crumbling Maul" "Cultist Greathammer" "slim mace" "Crescent Targe" "alloy crossbow" "sigil crest shield" "advanced oak greathammer" "Jewelled Gloves" "crystal focus" "scalper's jacket" "Martyr Crown" "layered gauntlets" "altar robe" "aged cuffs" "threaded shoes" "quiver" "chain tiara" "cloaked mail" "secured leggings" "feathered Sandals" "feathered Targe" "bow" "wayfarer jacket" "Firm Bracers" "Bound Bracers" "Spined Bracers" "Sectioned Bracers" "Hardened Bracers" "Fine Bracers" "Engraved Bracers" "Torn Gloves" "Sombre Gloves" "Stitched Gloves" "intricate gloves" "Pauascale gloves" "embroidered gloves" "adorned gloves" "ringmail gauntlets" "layered gauntlets" "doubled gauntlets" "burnished gauntlets" "plate gauntlets" "ornate gauntlets" "rope cuffs" "goldcast cuffs" "diviner cuffs" "righteous cuffs" "signet cuffs" "Gauze Wraps" "linen wraps" "Spiral wraps" "Buckled Wraps" "furtive Wraps" "utility Wraps" "Grand Manchettes" "rawhide boots" "laced boots" "embossed boots" "steeltoe boots" "lizardscale boots" "flared boots" "leatherplate boots" "embroidered boots" "straw sandals" "wrapped sandals" "lattice sandals" "silk slippers" "feathered sandals" "elaborate sandals" "Mail sabatons" "braced sabatons" "stacked sabatons" "covered sabatons" "flexile sabatons" "bold sabatons" "padded legging" "secured leggings" "Pelt Leggings" "pious leggings" "frayed shoes" "threaded shoes" "hunting shoes" "steelpoint shoes" "velour shoes" "bladed shoes" "leather vest" "quilted vest" "pathfinder coat" "shrouded vest" "rhoahide coat" "studded vest" "scout's vest" "serpentscale coat" "corsair vest" "smuggler coat" "mail coat" "Exquisite Vest" "armoured vest" "tattered robe" "feathered robe" "silk robe" "keth raiment" "votive raiment" "altar robe" "elementalist robe" "mystic raiment" "imperial robe" "plated raiment" "havoc raiment" "enlightened robe" "arcane robe" "chain mail" "rogue armour" "vagabond armour" "cloaked mail" "Explorer Armour" "scale mail" "knight armour" "ancestral mail" "lamellar mail" "Gladiator armour" "heroic armour" "tournament mail" "slayer armour" "pilgrim vestment" "Shaman mantle" "ironclad vestments" "Sacrificial Mantle" "cleric vestments" "tideseer mantle" "gilded vestments" "venerated mantle" "revered vestments" "corvus mantle" "zenith vestments" "hermit garb" "waxed jacket" "marabout garb" "wayfarer jacket" "anchorite garb" "scalper's jacket" "scoundrel jacket" "ascetic garb" "clandestine jacket" "monastic garb" "torment jacket" "devout garb" "assassin garb" "grand regalia" "felt cap" "lace hood" "shabby hood" "swathed cap" "hunter hood" "viper cap" "corsair cap" "Leatherbound hood" "velvet cap" "covert hood" "armoured cap" "twig circlet" "wicker tiara" "Beaded circlet" "chain tiara" "feathered tiara" "Gold Circlet" "Jade Tiara" "Coral Circlet" "Noble Circlet" "Twilight Tiara" "Magus Tiara" "Brimmed Helm" "Guarded Helm" "Visored Helm" "Cowled Helm" "Shielded Helm" "Closed Helm" "Decorated Helm" "Gallant Helm" "Iron Crown" "Horned Crown" "Cultist Crown" "Martyr Crown" "Lavish Crown" "Templar Crown" "Hewn Mask" "Face Mask" "Hooded Mask" "Veiled Mask" "Tribal Mask" "Shaded Mask" "Solid Mask" "Death Mask" "Grand Visage" "Crumbling Maul" "Cultist Greathammer" "Vaal Cuirass" "Advanced Vaal Cuirass" "Rusted Cuirass" "Iron Cuirass" "Fur Plate" "Raider Plate" "Maraketh Cuirass" "Steel Plate" "Full Plate" "Juggernaut Plate" "Vaal Cuirass" "Chieftain Cuirass" "Colosseum Plate" "Advanced Fur Plate" "Advanced Maraketh Cuirass" "Advanced Iron Cuirass" "Advanced Steel Plate" "Advanced Full Plate" "Advanced Vaal Cuirass" "Advanced Quilted Vest" "Champion Cuirass" "Moulded Mitts" "Stocky Mitts" "Riveted Mitts" "Bolstered Mitts" "Tempered Mitts" "Detailed Mitts" "Titan Mitts" "Grand Mitts" "Rough Greaves" "Iron Greaves" "Bronze Greaves" "Stone Greaves" "Trimmed Greaves" "Reefsteel Greaves" "Monument Greaves" "Totemic Greaves" "rusted Greathelm" "Soldier Greathelm" "Spired Greathelm" "Wrapped Greathelm" "Elite Greathelm" "Warrior Greathelm" "Commander Greathelm" "Fierce Greathelm" "Dueling Greathelm" "Goliath Greathelm" "Guardian Greathelm" "leaden greathammer" "plated mace" "crest shield"
+Rarity <= magic
+Sockets = 0
+Quality = 0
+
+
