@@ -447,7 +447,7 @@ Class Body Boots Gloves Helmet Shield Foci Bow Mace Quarterstaff Quivers Crossbo
 
 Show
 BaseType "Expert Elite Greathelm" "Expert Spired Greathelm" "Expert Soldier Greathelm" "Expert Moulded Mitts" "Expert Bolstered Mitts" "Expert Riveted Mitts" "Expert Steel Plate" "Expert Vaal Cuirass" "Expert Steel Plate" "Expert Iron Cuirass" "Expert Stone Greaves" "Expert Trimmed Greaves" "Expert Iron Greaves" "Expert Leaden Greathammer" "Expert Oak Greathammer" "Expert Temple Maul" "Expert Forge Maul" "Giant Maul" "Abyssal Cuirass" "Azure Amulet" "Emerald Ring"
-Rarity <= normal
+Rarity <= Magic
 SetFontSize 35
 SetTextColor 220 220 220
 SetBorderColor 255 125 0
